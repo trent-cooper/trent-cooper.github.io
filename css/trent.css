@@ -781,6 +781,7 @@ a {
   .about-body {
     margin-top: 10px;
     padding-bottom: 0px;
+    font-size: 14px;
   }
 
   .gridfinalfooter {
@@ -831,7 +832,7 @@ a {
   }
 
   .grid-text {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .tailslide-text {
@@ -867,6 +868,10 @@ a {
     margin-top: 80px;
     margin-right: 10px;
     margin-left: 10px;
+  }
+
+  .bold-text {
+    font-weight: 400;
   }
 }
 
