@@ -109,7 +109,8 @@ a {
 }
 
 .tailslide-container {
-  width: 85%;
+  width: 1100px;
+  max-width: 85%;
   margin: 100px auto 60px;
 }
 
@@ -142,6 +143,7 @@ a {
 
 .caption-text {
   color: #999;
+  line-height: 16px;
   text-align: justify;
 }
 
@@ -161,6 +163,7 @@ a {
 
 .about-body {
   padding-bottom: 0px;
+  line-height: 16px;
   text-align: justify;
 }
 
@@ -208,7 +211,8 @@ a {
 }
 
 .footer {
-  width: 85%;
+  width: 1100px;
+  max-width: 85%;
   margin-top: 200px;
   margin-right: auto;
   margin-left: auto;
@@ -315,7 +319,7 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
+  width: auto;
   height: 10vh;
   margin-right: auto;
   margin-left: auto;
@@ -332,6 +336,10 @@ a {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
 }
 
 .see-more-text {
@@ -440,6 +448,8 @@ a {
   margin-top: 140px;
   margin-bottom: 0px;
   font-family: 'Italian Garamond', 'Times New Roman', sans-serif;
+  font-size: 32px;
+  line-height: 34px;
 }
 
 .circuit-view-div {
@@ -519,7 +529,8 @@ a {
 }
 
 .about-container {
-  width: 85%;
+  width: 1100px;
+  max-width: 85%;
   margin: 140px auto 60px;
 }
 
@@ -573,6 +584,8 @@ a {
   margin-top: 0px;
   margin-bottom: 0px;
   font-family: 'Italian Garamond', 'Times New Roman', sans-serif;
+  font-size: 32px;
+  line-height: 34px;
 }
 
 .footer-text {
@@ -588,7 +601,7 @@ a {
   }
 
   .hi-div {
-    min-width: 350px;
+    min-width: auto;
   }
 
   .photo-div {
@@ -596,6 +609,7 @@ a {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    margin-right: 0px;
   }
 
   .link-div {
@@ -639,6 +653,7 @@ a {
 
   .me-photo {
     width: 200px;
+    margin-right: 20px;
   }
 
   .mui-icon {
@@ -850,13 +865,14 @@ a {
 
   .garamond-intro {
     overflow: visible;
-    font-size: 26px;
-    line-height: 28px;
+    font-size: 24px;
+    line-height: 26px;
     text-align: center;
   }
 
   .tailslide-container {
     width: auto;
+    max-width: none;
     margin-top: 10px;
     margin-right: 20px;
     margin-left: 20px;
@@ -958,16 +974,16 @@ a {
   }
 
   .tailslide-text {
-    font-size: 26px;
-    line-height: 28px;
+    font-size: 24px;
+    line-height: 26px;
     text-align: center;
   }
 
   .conclusion {
     width: 100%;
     margin-bottom: 40px;
-    font-size: 26px;
-    line-height: 28px;
+    font-size: 24px;
+    line-height: 26px;
   }
 
   .button {
@@ -986,14 +1002,14 @@ a {
   .heading-about {
     margin-top: 100px;
     margin-bottom: 15px;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 26px;
     font-weight: 400;
     text-align: center;
   }
 
   .contact-body {
-    margin-top: 10px;
+    margin-top: 5px;
   }
 
   .contact-icon {
@@ -1008,6 +1024,7 @@ a {
 
   .about-container {
     width: auto;
+    max-width: none;
     margin-top: 100px;
     margin-right: 20px;
     margin-left: 20px;
@@ -1015,6 +1032,8 @@ a {
 
   .contact-link {
     margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 16px;
   }
 
   .bold-text {
@@ -1023,7 +1042,7 @@ a {
 
   .heading-projects {
     margin-bottom: 15px;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 26px;
     font-weight: 400;
     text-align: center;
