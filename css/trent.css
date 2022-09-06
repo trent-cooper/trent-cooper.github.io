@@ -308,9 +308,16 @@ a {
   margin-right: 0px;
   margin-left: 0px;
   border-radius: 50%;
-  -webkit-filter: none;
-  filter: none;
+  -webkit-transition: -webkit-filter 200ms linear;
+  transition: -webkit-filter 200ms linear;
+  transition: filter 200ms linear;
+  transition: filter 200ms linear, -webkit-filter 200ms linear;
   text-align: center;
+}
+
+.me-photo:hover {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .mui-icon {
@@ -628,7 +635,24 @@ a {
   }
 
   .link-div {
-    display: none;
+    position: absolute;
+    left: auto;
+    top: 0%;
+    right: 0%;
+    bottom: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 20px;
+    margin-right: 20px;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
     text-align: right;
   }
 
@@ -709,6 +733,11 @@ a {
     margin-left: auto;
   }
 
+  .nav-text {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
   .bold-text {
     font-size: 14px;
   }
@@ -732,6 +761,11 @@ a {
     margin-left: auto;
   }
 
+  .hi-div {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   .photo-div {
     display: -webkit-box;
     display: -webkit-flex;
@@ -746,8 +780,17 @@ a {
   }
 
   .link-div {
-    display: none;
-    margin-top: 20px;
+    position: static;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 60px;
+    margin-right: 0px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     grid-auto-columns: 1fr;
     grid-column-gap: 16px;
     grid-row-gap: 16px;
@@ -829,6 +872,15 @@ a {
     margin-top: 0px;
   }
 
+  .nav-div {
+    margin-bottom: 0px;
+  }
+
+  .nav-link {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
   .heading-projects {
     font-size: 24px;
     line-height: 26px;
@@ -873,8 +925,17 @@ a {
   }
 
   .link-div {
-    display: none;
-    margin-top: 20px;
+    position: static;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 60px;
+    margin-right: 0px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     text-align: left;
   }
 
@@ -1037,12 +1098,23 @@ a {
     text-decoration: underline;
   }
 
+  .nav-div {
+    margin-right: 5px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+  }
+
   .about-container {
     width: auto;
     max-width: none;
     margin-top: 100px;
     margin-right: 20px;
     margin-left: 20px;
+  }
+
+  .nav-link {
+    margin-right: 0px;
+    margin-left: 0px;
   }
 
   .contact-link {
